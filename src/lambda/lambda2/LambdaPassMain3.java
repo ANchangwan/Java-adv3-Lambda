@@ -13,10 +13,9 @@ public class LambdaPassMain3 {
         System.out.println("sub: "+ sub.apply(1,2));
         System.out.println("mul: "+ mul.apply(1,2));
         System.out.println("div: "+ div.apply(1,2));
-
-
     }
-    static MyFunction getOperation(String operator) {
+
+      static MyFunction getOperation(String operator) {
         switch (operator) {
             case "add":
                 return (a, b) -> a + b;
