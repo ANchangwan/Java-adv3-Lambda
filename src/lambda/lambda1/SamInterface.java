@@ -1,6 +1,6 @@
 package lambda.lambda1;
 
-public interface NotSamInterface {
+@FunctionalInterface
+public interface SamInterface {
     void run();
-    void go();
 }

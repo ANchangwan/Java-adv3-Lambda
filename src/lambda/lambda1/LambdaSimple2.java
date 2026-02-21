@@ -1,23 +1,19 @@
 package lambda.lambda1;
 
 import lambda.MyFunction;
+import lambda.Procedure;
 
-public class LambdaSimple1 {
+public class LambdaSimple2 {
     public static void main(String[] args) {
-        // 기본
-        MyFunction f1 = (int a, int b) -> { return a + b; };
-        System.out.println("function1 : " + f1.apply(1, 2));
-
-        // 단일 표현식인 경우 중괄호와 리턴 생략 가능
-        MyFunction f2 = (int a, int b) ->  a + b;
-        System.out.println("function2 : " + f2.apply(1, 2));
-
-        // 단일 표현식이 아닐 경우 중괄호와 리턴 모두 필수
-        MyFunction f3 = (int a, int b) ->  {
-            System.out.println("람다 실행");
-            return a + b;
+        Procedure procedure1 = () ->{
+            System.out.println("hello! lambda");
         };
-        System.out.println("function2 : " + f3.apply(1, 2));
+        procedure1.apply();
+
+        // 단일 표현식은 중괄호 생략 가능
+        Procedure procedure2 = () -> System.out.println("hello! lambda2");
+        procedure2.apply();
+
 
     }
 }
