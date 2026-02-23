@@ -15,7 +15,7 @@ public class MapExample {
 
     public static void main(String[] args) {
         List<String> res = List.of("hello", "java", "lambda");
-        List<String> list = map(res, String::toUpperCase);
+        List<String> list = map(res, s -> s.toUpperCase());
         System.out.println("list: "+list);
 
         List<String> list1 = map(res, str -> "***" + str + "***");
