@@ -1,4 +1,4 @@
-package lambda.ex3.filter;
+package lambda.ex3.reduce;
 
 import java.util.List;
 

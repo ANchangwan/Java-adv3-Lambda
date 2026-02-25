@@ -2,10 +2,11 @@ package lambda.ex2.filter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class FilterFunction {
 
-    static List<Integer> filter(List<Integer> list, MyPredicate predicate) {
+    static List<Integer> filter(List<Integer> list, Predicate<Integer> predicate) {
         List<Integer> result = new ArrayList<>();
         for (Integer i : list) {
             if (predicate.test(i)) {

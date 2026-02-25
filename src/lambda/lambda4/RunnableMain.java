@@ -12,6 +12,5 @@ public class RunnableMain {
 
         Runnable runnable2 = () -> System.out.println("hello runnalbe");
         runnable2.run();
-
     }
 }

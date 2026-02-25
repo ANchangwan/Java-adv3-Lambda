@@ -1,11 +1,15 @@
 package lambda.ex2.map;
 
+import lambda.lambda4.FunctionMain;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class MapExample {
 
-    public static List<String> map(List<String> list, MyFunction func) {
+    public static List<String> map(List<String> list, UnaryOperator<String> func) {
         ArrayList<String> result = new ArrayList<>();
         for(String str : list) {
             result.add(func.apply(str));
