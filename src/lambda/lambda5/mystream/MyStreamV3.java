@@ -47,4 +47,8 @@ public class MyStreamV3 <T>{
         }
     }
 
+    public T getFirst(){
+        return integerList.getFirst();
+    }
+
 }
